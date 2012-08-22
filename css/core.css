@@ -108,7 +108,7 @@ a:hover { color: #f1433f; }
 #header h1 a, 
 #header h1 a:active, 
 #header h1 a:visited { 
-	color: #706f6f; 
+	color: #999999; 
 	text-decoration: none; 
 }
 
@@ -138,9 +138,9 @@ a:hover { color: #f1433f; }
 	-webkit-border-radius: 50%; 
 	-moz-border-radius: 50%;
 	border-radius: 50%; 
-	-webkit-box-shadow: 0 0 0 6px #cccdcd; 
-	-moz-box-shadow: 0 0 0 6px #cccdcd; 
-	box-shadow: 0 0 0 6px #cccdcd; 
+	-webkit-box-shadow: 0 0 0 6px #cccccc; 
+	-moz-box-shadow: 0 0 0 6px #cccccc; 
+	box-shadow: 0 0 0 6px #cccccc; 
 }
 
 #content {
@@ -176,16 +176,16 @@ a:hover { color: #f1433f; }
 	font-size: 1.8em; 
 	letter-spacing: -1px; 
 	text-align: left; 
-	color: #706f6f; 
+	color: #777777; 
 	display: none; 
 }
 
 #content p.hint a, 
 #content p.hint a:visited { 
 	font-size: 1em; 
-	color: #706f6f; 
+	color: #777777; 
 	text-decoration: none; 
-	border-bottom: 1px dotted #706f6f;
+	border-bottom: 1px dotted #777777;
 }
 
 #content p.hint a:hover {
@@ -204,7 +204,7 @@ a:hover { color: #f1433f; }
 #content p.hint span a, 
 #content p.hint span a:visited { 
 	font-size: 1em; 
-	color: #706f6f; 
+	color: #999999; 
 	text-decoration: none; 
 	border-bottom: none;
 }
@@ -229,7 +229,7 @@ a:hover { color: #f1433f; }
 
 #footer .inner a { 
 	font-size: 1.7em; 
-	color: #cccdcd; 
+	color: #999999; 
 	text-decoration: none; 
 }
 
@@ -258,6 +258,18 @@ adress span { font-size: 1.3em; }
 #left a, #left a:active, #left a:visited { color: #333;	font-size: 1em;	text-decoration: none; }
 #left a:hover {color: #64b41a; }
 
-#right { width: 49%;	float: right; margin-right: 1%;}
-#right a { float: right;	font-size: 1.5em; color: #cccdcd; margin-right: -1.5%;	text-decoration: none; }
+#right { 
+	width: 49%;	
+	float: right; 
+	margin-right: 1%;
+}
+
+#right a { 
+	float: right;
+	font-size: 1.5em; 
+	color: #999999; 
+	margin-right: -1.5%;	
+	text-decoration: none; 
+}
+
 #right a:hover { color: #64b41a; }
