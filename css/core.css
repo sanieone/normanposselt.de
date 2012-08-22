@@ -112,7 +112,7 @@ a:hover { color: #f1433f; }
 	text-decoration: none; 
 }
 
-#header h1 a:hover { color: /*#f1433f*/#8CC03B; }
+#header h1 a:hover { color: /*#f1433f*/#64b41a; }
 
 #portrait {
 	position: relative; 
@@ -189,8 +189,8 @@ a:hover { color: #f1433f; }
 }
 
 #content p.hint a:hover {
-	color: #8CC03B; 
-	border-bottom: 1px dotted #8CC03B;
+	color: #64b41a; 
+	border-bottom: 1px dotted #64b41a;
 }
 
 #content p.hint span {
@@ -233,7 +233,7 @@ a:hover { color: #f1433f; }
 	text-decoration: none; 
 }
 
-#footer .inner a:hover { color: #8CC03B; }
+#footer .inner a:hover { color: #64b41a; }
 
 #footer .inner { 
 	text-align: right; 
@@ -256,8 +256,8 @@ adress span { font-size: 1.3em; }
 
 #left { width: 49%; float: left; }
 #left a, #left a:active, #left a:visited { color: #333;	font-size: 1em;	text-decoration: none; }
-#left a:hover {color: #8CC03B; }
+#left a:hover {color: #64b41a; }
 
 #right { width: 49%;	float: right; margin-right: 1%;}
 #right a { float: right;	font-size: 1.5em; color: #cccdcd; margin-right: -1.5%;	text-decoration: none; }
-#right a:hover { color: #8CC03B; }
+#right a:hover { color: #64b41a; }
