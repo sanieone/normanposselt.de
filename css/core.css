@@ -108,11 +108,11 @@ a:hover { color: #f1433f; }
 #header h1 a, 
 #header h1 a:active, 
 #header h1 a:visited { 
-	color: /*rgb(49,153,241)*/#706f6f; 
+	color: #706f6f; 
 	text-decoration: none; 
 }
 
-#header h1 a:hover { color: #f1433f; }
+#header h1 a:hover { color: /*#f1433f*/#8CC03B; }
 
 #portrait {
 	position: relative; 
@@ -189,8 +189,8 @@ a:hover { color: #f1433f; }
 }
 
 #content p.hint a:hover {
-	color: #f1433f; 
-	border-bottom: 1px dotted #f1433f;
+	color: #8CC03B; 
+	border-bottom: 1px dotted #8CC03B;
 }
 
 #content p.hint span {
@@ -211,6 +211,14 @@ a:hover { color: #f1433f; }
 
 #content p.hint span a:hover {color: #f1433f; border-bottom: none;}
 
+#content p.hint span strong.github a:hover {color: #4183c4; border-bottom: none;}
+#content p.hint span strong.google+ a:hover {color: #db4a39; border-bottom: none;}
+#content p.hint span strong.linkedin a:hover {color: #0e76a8; border-bottom: none;}
+#content p.hint span strong.twitter a:hover {color: #00a0d1; border-bottom: none;}
+#content p.hint span strong.xing a:hover {color: #126568; border-bottom: none;}
+
+
+
 #footer { 
 	width: 100%; 
 	height: 1em;
@@ -225,7 +233,7 @@ a:hover { color: #f1433f; }
 	text-decoration: none; 
 }
 
-#footer .inner a:hover { color: #f1433f; }
+#footer .inner a:hover { color: #8CC03B; }
 
 #footer .inner { 
 	text-align: right; 
@@ -248,8 +256,8 @@ adress span { font-size: 1.3em; }
 
 #left { width: 49%; float: left; }
 #left a, #left a:active, #left a:visited { color: #333;	font-size: 1em;	text-decoration: none; }
-#left a:hover {color: #f1433f; }
+#left a:hover {color: #8CC03B; }
 
 #right { width: 49%;	float: right; margin-right: 1%;}
 #right a { float: right;	font-size: 1.5em; color: #cccdcd; margin-right: -1.5%;	text-decoration: none; }
-#right a:hover { color: #f1433f; }
+#right a:hover { color: #8CC03B; }
