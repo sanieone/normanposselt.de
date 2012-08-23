@@ -5,17 +5,15 @@
 
 @import url(reset.css);
 
-
-
 @font-face {
-    font-family: 'TeXGyreHerosRegular';
-    src: url('../fonts/texgyreheros-regular-webfont.eot');
-    src: url('../fonts/texgyreheros-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/texgyreheros-regular-webfont.woff') format('woff'),
-         url('../fonts/texgyreheros-regular-webfont.ttf') format('truetype'),
-         url('../fonts/texgyreheros-regular-webfont.svg#') format('svg');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'icomoon';
+	src: url('../fonts/icomoon.eot');
+	src: url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon.woff') format('woff'),
+		url('../fonts/icomoon.ttf') format('truetype'),
+		url('../fonts/icomoon.svg#IcoMoon') format('svg');
+font-weight: normal;
+font-style: normal;
 }
 
 @font-face {
@@ -41,14 +39,14 @@
 }
 
 @font-face {
-	font-family: 'icomoon';
-	src: url('../fonts/icomoon.eot');
-	src: url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/icomoon.woff') format('woff'),
-		url('../fonts/icomoon.ttf') format('truetype'),
-		url('../fonts/icomoon.svg#IcoMoon') format('svg');
-font-weight: normal;
-font-style: normal;
+    font-family: 'TeXGyreHerosRegular';
+    src: url('../fonts/texgyreheros-regular-webfont.eot');
+    src: url('../fonts/texgyreheros-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/texgyreheros-regular-webfont.woff') format('woff'),
+         url('../fonts/texgyreheros-regular-webfont.ttf') format('truetype'),
+         url('../fonts/texgyreheros-regular-webfont.svg#') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 ::selection { background: #f1433f; color: #fff; } /* Safari */
@@ -180,10 +178,9 @@ a:hover { color: #f1433f; }
 }
 
 #content p.hint span {
-	left: 50%; 
+	left: 25%; 
 	position: relative; 
-	width: 10em; 
-	margin-left: -3.3em;
+	width: auto; 
 	font-size: 1.75em;
 }
 
