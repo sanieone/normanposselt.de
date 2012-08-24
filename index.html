@@ -12,31 +12,32 @@
 			$('#header a').click(function(event) {
 				event.preventDefault();
 				
-				$('#content p.intro').fadeIn(1200, function(){
-				  $('#content p.hint').delay(1100).fadeIn(1200);
+				$('#header a').fadeOut(1);				
+					$('#content p.intro').fadeIn(1200, function(){
+				  		$('#content p.hint').delay(1100).fadeIn(1200);
 				});
 			});
 		});
 	</script>
 </head>
 <body>
-	<div id="page" style="display:none;">
+	<div id="page">
 		
 		<div id="header">
 			<div class="container">
 				<section class="col1">
-					<div id="portrait">
-						<!--<b></b>--><img src='images/norman.jpg' height='150' width='150' />
+					<div id="portrait" style="display:none;">
+						<img src='images/norman.jpg' height='150' width='150' />
 					</div>
 				</section>
 				<section class="col2">
-				<h1><a href="#" title="Click me." class="icon-b" data-icon="&#xe002;"></a></h1>
+				<h1 style="display:none;"><a href="#" title="Click me." class="icon-b" data-icon="&#xe002;"></a></h1>
 				</section>				
 			</div>
 		</div>
 		
 		<div id="content" class="container">
-			<p class="intro">Hello, my name is <span>Norman Posselt</span>. Nice to meet you.</p>
+			<p class="intro">Hello, my name is <strong>Norman Posselt</strong>. Nice to meet you.</p>
 			<p class="hint">This website is still under construction.<br />
 			Meanwhile, read my German <a target="_blank" title="curriculum vitae" href="downloads/np_cv_german.pdf">curriculum vit&aelig;</a> or browse my social profiles:<br /><br />
 			<span>
@@ -58,7 +59,7 @@
 			</p>
 		</div>
 		
-		<div id="footer">
+		<div id="footer" style="display:none;">
 			<div class="inner">
 			<a href id="showFancyModal" class="icon-b" data-icon="&#xe007;"></a>
 			</div>
@@ -79,7 +80,22 @@
 				06796 Brehna, Germany
 				<br />
 				<br />
-				This website is made with <a target="_blank" href="http://macrabbit.com/espresso/">Espresso by MacRabbit</a>. Fonts that are used are Bariol, TeX Gyre Heros, IcoMoon (icons by <a href="http://lifetreecreative.com/icons/">Gedy Rivera</a>).
+				This website is made with 
+				
+				<a target="_blank" href="http://macrabbit.com/espresso/">Espresso by MacRabbit</a>. 
+				
+				Fonts that are used are  
+				
+				<a target="_blank" href="http://www.bariol.com">Bariol</a>, 
+				<a target="_blank" href="http://www.gust.org.pl/projects/e-foundry/tex-gyre/heros">TeX Gyre Heros</a>
+				
+				and 
+				
+				<a target="_blank" href="http://keyamoon.com/icomoon/#toHome">IcoMoon</a> (icons by 
+				
+				<a target="_blank" href="http://lifetreecreative.com/icons/">Gedy Rivera</a>
+				
+				).
 				<br />
 				<br />
 				&copy; 2012 | code by Norman Posselt
@@ -96,7 +112,9 @@
 	</div>	
 	<script type="text/javascript">
 	$(window).load(function(){
-		$('#page').fadeIn(1200);
+		$('#portrait').fadeIn(1000);
+			$('#footer').fadeIn(1000);
+				$('h1').delay(1400).fadeIn(1000);
 	});
 	</script>
 	<script type="text/javascript">	
