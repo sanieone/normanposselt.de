@@ -17,6 +17,17 @@ font-style: normal;
 }
 
 @font-face {
+	font-family: 'icomoon2';
+	src: url('../fonts/icomoon2.eot');
+	src: url('../fonts/icomoon2.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon2.woff') format('woff'),
+		url('../fonts/icomoon2.ttf') format('truetype'),
+		url('../fonts/icomoon2.svg#IcoMoon') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
     font-family: 'Bariol_Light';
     src: url('../fonts/bariol_light-webfont.eot');
     src: url('../fonts/bariol_light-webfont.eot?#iefix') format('embedded-opentype'),
@@ -53,6 +64,7 @@ font-style: normal;
 ::-moz-selection { background: #f1433f; color: #fff; } /* Firefox */
 
 .icon-b:before, .icon-a:after { font-family: 'icomoon'; font-weight: normal; font-style: normal; content: attr(data-icon); }
+.icon-b2:before, .icon-a2:after { font-family: 'icomoon2'; font-weight: normal; font-style: normal; content: attr(data-icon); }
 
 a, a:visited { 
 	-webkit-transition: all .3s ease-in-out;
@@ -115,6 +127,7 @@ a:hover { color: #f1433f; }
 #portrait {
 	position: relative; 
 	width: 6em; 
+	display: none;
 }
 
 #portrait img {
@@ -122,9 +135,9 @@ a:hover { color: #f1433f; }
 	-webkit-border-radius: 50%; 
 	-moz-border-radius: 50%;
 	border-radius: 50%; 
-	-webkit-box-shadow: 0 0 0 6px #cccccc; 
-	-moz-box-shadow: 0 0 0 6px #cccccc; 
-	box-shadow: 0 0 0 6px #cccccc; 
+	-webkit-box-shadow: 0 0 0 6px #cccccc, 0 0 9px black; 
+	-moz-box-shadow: 0 0 0 6px #cccccc, 0 0 9px black;
+	box-shadow: 0 0 0 6px #cccccc, 0 0 9px black; 
 }
 
 #content {
@@ -146,6 +159,7 @@ a:hover { color: #f1433f; }
 	color: #333;
 	display: none;
 }
+
 #content p.intro strong {
 	font-family: 'Bariol_Bold'; 
 	font-weight: normal; 
@@ -165,14 +179,17 @@ a:hover { color: #f1433f; }
 }
 
 #content p.hint a, 
-#content p.hint a:visited { 
+#content p.hint a:visited,
+#imprint-content a,
+#imprint-content a:visited { 
 	font-size: 1em; 
 	color: #777777; 
 	text-decoration: none; 
 	border-bottom: 1px dotted #777777;
 }
 
-#content p.hint a:hover {
+#content p.hint a:hover,
+#imprint-content a:hover {
 	color: #64b41a; 
 	border-bottom: 1px dotted #64b41a;
 }
@@ -205,14 +222,8 @@ a:hover { color: #f1433f; }
 	height: 1em;
 	bottom: 1em; 
 	position: fixed; 
-	z-index: 10;
-	/*font-family: 'Bariol_Light'; 
-	font-weight: normal; 
-	font-style: normal; 
-	font-size: 1.2em; 
-	letter-spacing: -1px;
-	text-align: center; 
-	color: #777777;*/  
+	z-index: 10; 
+	display: none; 
 }
 
 #footer .inner a { 
@@ -228,80 +239,29 @@ a:hover { color: #f1433f; }
 	margin: -21px 30px 0px 0px; 
 }
 
-
-/* Fancy Modal by ZURB Playground */
-
-adress { font-size: .8em; }
-
-#fancyModal { 
+#imprint-content {
 	left: 50%; 
 	position: relative; 
-	margin-left: -260px; 
-	width: 500px; 
-	display: block; 
-	top: 0px; 
-	position: absolute; 
-	z-index: 100; 
-	border: solid 1px #999; 
-	box-shadow: 0px 3px 6px rgba(0,0,0,0.25); 
-	-moz-box-shadow: 0px 3px 6px rgba(0,0,0,0.25); 
-	-webkit-box-shadow: 0px 3px 6px rgba(0,0,0,0.25); 
-	padding: 90px 3px 5px 15px; 
-	border-bottom-left-radius: 10px; 
-	border-bottom-right-radius: 10px; 
-	-moz-border-radius-bottomleft: 10px; 
-	-webkit-border-bottom-left-radius: 10px; 
-	-moz-border-radius-bottomright: 10px; 
-	-webkit-border-bottom-right-radius: 10px;
-	background: #fff; 
-	color: #333; 
-	-webkit-transition: -webkit-transform 0.25s ease-out; 
-	-webkit-transform: translateY(-570px); 
-	-moz-transform: translatey(-570px); 
-	-ms-transform: translatey(-570px); /* For Firefox, who doesn't support CSS Transforms */
-} 
-
-body.ff3 div#fancyModal { top: -10000px; }
-
-body.ff3 div#fancyModal.show { top: -72px; }			
-
-#fancyModal.show { 
-	-webkit-transform: translateY(-80px); 
-	-moz-transform: translatey(-80px); 
-	-ms-transform: translatey(-80px); 
+	width: 20em; 
+	margin-left: -10em; 
+	margin-top: 1.5em;
+	margin-bottom: 1em; 
+	
+	font-family: 'Bariol_Light'; 
+	font-weight: normal; 
+	font-style: normal; 
+	font-size: 1.8em; 
+	letter-spacing: -1px; 
+	text-align: left; 
+	color: #777777; 
+	line-height: 1.05em;
+	display: none;
 }
 
-adress span { font-size: 1.3em; }
-
-#left { 
-	width: 49%; 
-	float: left; 
+#imprint-content strong {
+	font-family: 'Bariol_Bold'; 
+	font-weight: normal; 
+	font-style: normal; 
+	color: #333;
 }
 
-#left a, 
-#left a:active, 
-#left a:visited { 
-	color: #333;	
-	font-size: 1em;	
-	text-decoration: none; 
-}
-
-#left a:hover {
-	color: #64b41a; 
-}
-
-#right { 
-	width: 49%;	
-	float: right; 
-	margin-right: 1%;
-}
-
-#right a { 
-	float: right;
-	font-size: 1.5em; 
-	color: #999999; 
-	margin-right: -1.5%;	
-	text-decoration: none; 
-}
-
-#right a:hover { color: #64b41a; }
