@@ -50,12 +50,12 @@ font-style: normal;
 }
 
 @font-face {
-    font-family: 'TeXGyreHerosRegular';
-    src: url('../fonts/texgyreheros-regular-webfont.eot');
-    src: url('../fonts/texgyreheros-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/texgyreheros-regular-webfont.woff') format('woff'),
-         url('../fonts/texgyreheros-regular-webfont.ttf') format('truetype'),
-         url('../fonts/texgyreheros-regular-webfont.svg#') format('svg');
+    font-family: 'Bariol_Italic_Regular';
+    src: url('../fonts/bariol_regular_italic-webfont.eot');
+    src: url('../fonts/bariol_regular_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bariol_regular_italic-webfont.woff') format('woff'),
+         url('../fonts/bariol_regular_italic-webfont.ttf') format('truetype'),
+         url('../fonts/bariol_regular_italic-webfont.svg#') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -93,7 +93,7 @@ a:hover { color: #f1433f; }
 .col2 { width: 77%; float: right; margin-left: 1em; text-align: left; }
 
 #header { 
-	margin-top: 6em; 
+	margin-top: 3.5em; 
 	left: 50%; 
 	position: relative; 
 	width: 30em; 
@@ -216,6 +216,25 @@ a:hover { color: #f1433f; }
 #content p.hint span strong.linkedin a:hover { color: #0e76a8; border-bottom: none; }
 #content p.hint span strong.twitter a:hover { color: #00a0d1; border-bottom: none; }
 #content p.hint span strong.xing a:hover { color: #126568; border-bottom: none; }
+
+#content p.hint i {
+	color: #333;
+	font-family: Bariol_Italic_Regular;
+	left: 23%; 
+	position: relative; 
+	width: auto;
+	top: .5em;
+	unicode-bidi: bidi-override; direction: rtl;
+}
+
+#content p.hint small {
+	color: #cccccc;
+	position: relative;
+	left: 19%; 
+	top: .6em;
+	
+	
+}
 
 #footer { 
 	width: 100%; 
