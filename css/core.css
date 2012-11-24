@@ -77,7 +77,6 @@ a:hover { color: #f1433f; }
 
 #page { 
 	background-color: #fff; 
-	font-family: 'TeXGyreHerosRegular'; 
 	font-weight: normal; 
 	font-style: normal; 
 	font-size: 1em; 
@@ -96,16 +95,16 @@ a:hover { color: #f1433f; }
 	margin-top: 3.5em; 
 	left: 50%; 
 	position: relative; 
-	width: 30em; 
-	margin-left: -4.75em;
+	width: 12em; 
+	margin-left: -4.5em;
 }
 
 #header h1 { 
 	font-size: 4em; 
-	font-style: normal; 
+	font-style: normal;
 	font-weight: normal; 
 	margin-top: -3em; 
-	margin-left: .2em ; 
+	margin-left: 1.2em ; 
 }
 
 #header h1 a { 
@@ -131,6 +130,8 @@ a:hover { color: #f1433f; }
 }
 
 #portrait img {
+	height: 150px; 
+	width: 150px; 
 	display: block; 
 	-webkit-border-radius: 50%; 
 	-moz-border-radius: 50%;
@@ -283,4 +284,39 @@ a:hover { color: #f1433f; }
 	font-style: normal; 
 	color: #333;
 }
+
+/*@media only screen and (min-width:768px) { 
+
+}
+
+@media only screen and (max-width:767px) { 
+
+}*/
+
+/*@media only screen and (min-width:480px) and (max-width:767px) { 
+	#portrait img {
+		height: 150px; 
+		width: 150px; 
+	}	
+}
+
+@media only screen and (min-width:320px) and (max-width:479px)  { 
+	#portrait img {
+		height: 150px; 
+		width: 150px; 
+	}
+	
+	#content {
+		left: 50%;
+	    margin-left: -9em; 
+	    position: relative; 
+	    width: 18em; 
+		
+	}
+	
+	#content p.intro {
+		font-size: 1.5em;
+	}
+	
+}*/
 
